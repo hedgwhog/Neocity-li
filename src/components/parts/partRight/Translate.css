@@ -1,0 +1,75 @@
+.screen-part-2 {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+
+  width: 270px;
+  height: 420px;
+
+  background: #ececec;
+  border: 3px solid black;
+  border-radius: 40px;
+
+  overflow: hidden;
+  box-shadow:
+    0 0 20px rgba(120,180,255,.25),
+    0 0 45px rgba(90,140,255,.15),
+    0 0 80px rgba(60,100,255,.08);
+}
+
+.translator {
+  position: absolute;
+  inset: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  z-index: 2;
+}
+
+textarea {
+  height: 130px;
+
+  resize: none;
+
+  border: 2px solid black;
+  border-radius: 15px;
+
+  padding: 10px;
+
+  font-size: 18px;
+  font-family: serif;
+
+  outline: none;
+}
+
+button {
+  height: 42px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: black;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.result {
+  flex: 1;
+
+  border: 2px solid black;
+  border-radius: 15px;
+
+  padding: 12px;
+
+  overflow-y: auto;
+
+  background: white;
+
+  font-size: 18px;
+  line-height: 1.4;
+}

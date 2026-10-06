@@ -1,0 +1,242 @@
+.center-container {
+    width: 1190px;
+    height: 470px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .box {
+        position: absolute;
+        left: 270px;
+        bottom: 220px;
+        width: 150px;
+        height: 90px;
+        border: 8px solid black;
+        border-right: none !important;
+        border-top: none !important;
+        background-color: rgb(231, 231, 231);
+        box-shadow: 0 6px 12px rgba(0,0,0,.25);
+
+        .innerbox {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            width: 120px;
+            height: 60px;
+            border: 10px solid black;
+            border-right: none !important;
+            border-top: none !important;
+            box-shadow: 0 6px 12px rgba(0,0,0,.25);
+        }
+
+        .cross {
+            position: absolute;
+            left: -21px;
+            bottom: 10px;
+            width: 88px;
+            height: 25px;
+            background-color: black;
+            border-radius: 0 0 70px 70px;
+            rotate: 45deg;
+            box-shadow: 0 6px 12px rgba(0,0,0,.25);
+        }
+    }
+
+    .fallen-sign {
+        position: absolute;
+        left: 260px;
+        top: 80px;
+        width: 220px;
+        height: 130px;
+        border: 3px solid black;
+        background-color: rgb(231, 231, 231);
+        rotate: 32deg;
+        box-shadow:
+        0 0 20px rgba(255,0,180,.18),
+        0 0 60px rgba(255,0,180,.08),
+        0 0 25px rgba(0,255,255,.18),
+        0 0 70px rgba(0,220,255,.10);
+        z-index: 3;
+
+        h2 {
+          position: absolute;  
+          padding: 22px;
+          top: 5px;
+        }
+
+        h4 {
+            position: absolute;  
+            padding: 27px; 
+            top: 45px;
+        }
+
+        .circle-1 {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #25ccff;
+            box-shadow:
+            0 0 18px rgba(255,220,120,.25),
+            0 0 60px rgba(255,180,70,.10),
+            0 0 25px rgba(0,255,255,.15),
+            0 0 80px rgba(0,180,255,.08);
+            border-radius: 50%;
+            margin: 4px;
+        }
+
+        .circle-2 {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #ff16e4;
+            box-shadow:
+            0 0 18px rgba(255,210,120,.22),
+            0 0 50px rgba(255,180,70,.10),
+            0 0 25px rgba(180,90,255,.18),
+            0 0 70px rgba(120,40,255,.10);
+            border-radius: 50%;
+            margin: 4px;
+        }
+
+        .circle-1,
+        .circle-2 {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin: 4px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    }
+
+    .lightpole {
+        position: absolute;
+        left: 660px;
+        bottom: 270px;
+        width: 15px;
+        height: 270px;
+        background-color: rgb(97, 97, 97);
+        border: 1px solid black;
+        border-top: none !important;
+        box-shadow: 0 6px 12px rgba(0,0,0,.25);
+    }
+
+    .lightpole-circle {
+        position: absolute;
+        left: 643px;
+        bottom: 538px;
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        z-index: 10;
+    }
+
+    .lightpole-circle .electric-aura {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: radial-gradient(
+            rgba(0, 170, 255, 0.95)
+        );
+        filter: blur(7px);
+        opacity: 0.4;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    .lightpole-circle .electric-core {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        background: cyan;
+        border-radius: 50%;
+        box-shadow: 0 0 6px cyan;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .lightpole-circle .lightning-icon {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .lightning-icon {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .lightpole-triangle {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-top: solid 50px transparent;
+        border-right: solid 50px transparent;
+        border-bottom: solid 50px transparent;
+        border-left: solid 70px black;
+        filter: drop-shadow(0 0 10px rgba(0, 170, 255, 0.6));
+    }
+
+    .lightpole-shadow {
+        position: absolute;
+        left: 635px;
+        bottom: 264px;
+        width: 0;
+        height: 118px;
+        border: 1px solid black;
+        rotate: -25deg;
+        box-shadow: 0 6px 12px rgba(0,0,0,.25);
+    }
+
+    .add-connector {
+        position: absolute;
+        right: 350px;
+        bottom: 160px;
+        width: 15px;
+        height: 80px;
+        border: 15px solid black;
+        border-left: none !important;
+        border-right: none !important;
+        box-shadow:
+        0 0 18px rgba(170,80,255,.35),
+        0 0 45px rgba(150,60,255,.22),
+        0 0 90px rgba(120,40,255,.10);
+    }
+
+    .add {
+        background-image: url("../Bus.png");
+        background-size: contain;
+        position: absolute;
+        right: 365px;
+        bottom: 85px;
+        width: 65px;
+        height: 240px;
+        border-radius: 40px;
+        border: 3px solid black;
+        box-shadow:
+        0 0 18px rgba(170,80,255,.35),
+        0 0 45px rgba(150,60,255,.22),
+        0 0 90px rgba(120,40,255,.10);
+    }
+}
